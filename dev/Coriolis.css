@@ -13,7 +13,8 @@ div.sheet-background {
   z-index: -1;
   /*delete width before publishing?*/
   width: 100%; 
-  float: left;
+  /*float: left;*/
+  display: inline-block;
   /*height: 2000px;*/
 }
 
@@ -28,11 +29,11 @@ div.sheet-background {
   /*font-weight: bold;*/
 }
 
-div.sheet-box {
-  background-color: gray;
+.sheet-box {
+  background-color: silver;
   margin: 10px 5px 10px 5px;
   height: 40px;
-  border: 2px solid red;
+  border: 2px solid gray;
 }
 
 div.sheet-col-4 {
@@ -50,3 +51,13 @@ div.sheet-col-6 {
   float: left;
 }
 
+input.sheet-value-single {
+  width: 36px !important;
+  float: right;
+}
+
+div.sheet-col-header {
+  background-color: black;
+  padding: 2px 6px 2px 6px;
+  color: white;
+}
