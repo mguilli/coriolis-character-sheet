@@ -1,0 +1,52 @@
+div.sheet-whole-container {
+  margin: 20px 20px 20px 20px;
+  padding-bottom: 20px;
+}
+
+div.sheet-background {
+  background-image: url(http://i.imgur.com/91nl0Qu.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 680px;
+  max-width: 840px;
+  /*background-color: black;*/
+  z-index: -1;
+  /*delete width before publishing?*/
+  width: 100%; 
+  float: left;
+  /*height: 2000px;*/
+}
+
+.sheet-center {
+  text-align: center;
+}
+
+.sheet-lite {
+  color: white;
+  /*font-family: Arial;*/
+  font-size: 18px;
+  /*font-weight: bold;*/
+}
+
+div.sheet-box {
+  background-color: gray;
+  margin: 10px 5px 10px 5px;
+  height: 40px;
+  border: 2px solid red;
+}
+
+div.sheet-col-4 {
+  width: 33.33%;
+  float: left;
+}
+
+div.sheet-col-8 {
+  width: 66.66%;
+  float: left;
+}
+
+div.sheet-col-6 {
+  width: 50%;
+  float: left;
+}
+
