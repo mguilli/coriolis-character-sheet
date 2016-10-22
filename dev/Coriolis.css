@@ -1,39 +1,24 @@
-div.sheet-whole-container {
-  margin: 20px 20px 20px 20px;
-  padding-bottom: 20px;
-}
-
-div.sheet-background {
-  background-image: url(http://i.imgur.com/91nl0Qu.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-width: 680px;
-  max-width: 840px;
-  /*background-color: black;*/
-  z-index: -1;
-  /*delete width before publishing?*/
-  width: 100%; 
-  /*float: left;*/
+div.sheet-container {
+  background-color: white;
+  width: 814px; 
   display: inline-block;
-  /*height: 2000px;*/
+  padding: 20px 6px 20px 20px;
+  font-family: Helvetica;
 }
 
-.sheet-center {
+.sheet-title {
+  font-size: 12px;
   text-align: center;
-}
-
-.sheet-lite {
-  color: white;
-  /*font-family: Arial;*/
-  font-size: 18px;
-  /*font-weight: bold;*/
+  font-weight: bold;
 }
 
 .sheet-box {
-  background-color: silver;
-  margin: 10px 5px 10px 5px;
-  height: 40px;
-  border: 2px solid gray;
+  background-color: #e3deda;
+  /*margin: 10px 5px 10px 5px;*/
+  /*height: 40px;*/
+  border: 2px solid #62584d;
+  margin-right: 14px;
+  margin-bottom: 14px;
 }
 
 div.sheet-col-4 {
@@ -58,6 +43,8 @@ input.sheet-value-single {
 
 div.sheet-col-header {
   background-color: black;
-  padding: 2px 6px 2px 6px;
+  padding: 8px 6px 8px 6px;
   color: white;
+  font-size: 14px;
 }
+
