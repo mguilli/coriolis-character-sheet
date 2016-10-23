@@ -120,8 +120,8 @@
                     <input type='text' name='attr_face' value='Face'>
                 </div>
                 <div class='sheet-row'>
-                    <label>Clothing:
-                    <input type='text' name='attr_clothing' value='Clothing'></label>
+                    Clothing:
+                    <input type='text' name='attr_clothing' value='Clothing'>
                 </div>
             </div>
             <div class="sheet-box">
@@ -204,7 +204,10 @@
             </div>
             <div class='sheet-new-block'>
                 <div class="sheet-box">
-                    <div class='sheet-col-header'>SKILLS</div>
+                    <div class='sheet-col-header'>
+                        SKILLS
+                        <span class='sheet-headertext-general sheet-smalltext'>GENERAL</span>
+                    </div>
                     <table>
                         <tr class='sheet-dark-row'>
                             <td width="50%">
@@ -218,87 +221,169 @@
                         </tr>
                         <tr class='sheet-dark-row'>
                             <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
+                                <span>FORCE (STR)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_force" value="0">
                             </td>
                             <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
-                            </td>
-                        </tr>
-                        <tr class='sheet-dark-row'>
-                            <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
-                            </td>
-                            <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
+                                <span>CULTURE (EMP)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_culture" value="0">
                             </td>
                         </tr>
                         <tr class='sheet-dark-row'>
                             <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
+                                <span>INFILTRATION (AGI)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_infiltration" value="0">
                             </td>
                             <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
-                            </td>
-                        </tr>
-                        <tr class='sheet-dark-row'>
-                            <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
-                            </td>
-                            <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
+                                <span>DATA DJINN (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_data-djinn" value="0">
                             </td>
                         </tr>
                         <tr class='sheet-dark-row'>
                             <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
+                                <span>MANIPULATION (EMP)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_manipulation" value="0">
                             </td>
                             <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
-                            </td>
-                        </tr>
-                        <tr class='sheet-dark-row'>
-                            <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
-                            </td>
-                            <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
+                                <span>MEDICURGY (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_medicurgy" value="0">
                             </td>
                         </tr>
                         <tr class='sheet-dark-row'>
                             <td width="50%">
-                                <span>DEXTERITY (AGI)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_dexterity" value="0">
+                                <span>MELEE COMBAT (STR)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_melee-combat" value="0">
                             </td>
                             <td width="50%">
-                                <span>COMMAND (EMP)</span>                    
-                                <input class="sheet-value-single" type="number" name="attr_command" value="0">
+                                <span>MYSTIC POWERS (EMP)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_mystic-powers" value="0">
+                            </td>
+                        </tr>
+                        <tr class='sheet-dark-row'>
+                            <td width="50%">
+                                <span>OBSERVATION (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_observation" value="0">
+                            </td>
+                            <td width="50%">
+                                <span>PILOT (AGI)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_pilot" value="0">
+                            </td>
+                        </tr>
+                        <tr class='sheet-dark-row'>
+                            <td width="50%">
+                                <span>RANGED COMBAT (AGI)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_ranged-combat" value="0">
+                            </td>
+                            <td width="50%">
+                                <span>SCIENCE (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_science" value="0">
+                            </td>
+                        </tr>
+                        <tr class='sheet-dark-row'>
+                            <td width="50%">
+                                <span>SURVIVAL (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_survival" value="0">
+                            </td>
+                            <td width="50%">
+                                <span>TECHNOLOGY (WIT)</span>                    
+                                <input class="sheet-value-single" type="number" name="attr_technology" value="0">
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="sheet-box">
-                    <div class='sheet-col-header'>WEAPONS</div>
+                    <table>
+                        <tr class='sheet-col-header'>
+                            <td width="31%">WEAPONS</td>
+                            <td width="6%" class="sheet-smalltext sheet-center">BONUS</td>
+                            <td width="6%" class="sheet-smalltext sheet-center">INIT</td>
+                            <td width="6%" class="sheet-smalltext sheet-center">DAMAGE</td>
+                            <td width="6%" class="sheet-smalltext sheet-center">CRIT</td>
+                            <td width="10%" class="sheet-smalltext sheet-center">RANGE</td>
+                            <td width="23%" class="sheet-smalltext sheet-center">COMMENTS</td>
+                            <td width="12%" class="sheet-smalltext sheet-center">RELOADS</td>
+                        </tr>
+                        <tr class='sheet-row sheet-nopad'>
+                            <td><input type='text' name='attr_name-w1'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_bonus-w1'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_init-w1'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_damage-w1'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_crit-w1'></td>
+                            <td><input type='text' name='attr_range-w1'></td>
+                            <td><input type='text' name='attr_comments-w1'></td>
+                            <td class='sheet-center'>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-1'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-2'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-3'>
+                                </div>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-4'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-5'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w1-6'>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="sheet-row sheet-nopad">
+                            <td><input type='text' name='attr_name-w2'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_bonus-w2'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_init-w2'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_damage-w2'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_crit-w2'></td>
+                            <td><input type='text' name='attr_range-w2'></td>
+                            <td><input type='text' name='attr_comments-w2'></td>
+                            <td class='sheet-center'>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-1'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-2'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-3'>
+                                </div>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-4'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-5'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w2-6'>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr class="sheet-row sheet-nopad">
+                            <td><input type='text' name='attr_name-w3'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_bonus-w3'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_init-w3'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_damage-w3'></td>
+                            <td><input class='sheet-value-single' type='number' name='attr_crit-w3'></td>
+                            <td><input type='text' name='attr_range-w3'></td>
+                            <td><input type='text' name='attr_comments-w3'></td>
+                            <td class='sheet-center'>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-1'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-2'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-3'>
+                                </div>
+                                <div>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-4'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-5'>
+                                    <input class='sheet-checkrow-reload' type='checkbox' name='attr_reload-w3-6'>
+                                </div>
+                            </td>
+                        </tr>                       
+                    </table>
                 </div>
             </div>
         </div>
         <div class="sheet-col-4">
             <div class="sheet-box">
                 <div class='sheet-col-header'>TALENTS</div>
+                <div class="sheet-row sheet-nopad"><input type='text' name='attr-talent-1'></div>
+                <div class="sheet-row sheet-nopad"><input type='text' name='attr-talent-2'></div>
+                <div class="sheet-row sheet-nopad"><input type='text' name='attr-talent-3'></div>
             </div>
             <div class="sheet-box">
-                <div class='sheet-col-header'>GEAR</div>
+                <table>
+                    <tr class='sheet-col-header'>
+                        <td width="85%">GEAR</td>
+                        <td width="15%" class="sheet-smalltext">BONUS</td>
+                    </tr>
+                </table>
             </div>
             <div class="sheet-box">
                 <div class='sheet-col-header'>ARMOR</div>
