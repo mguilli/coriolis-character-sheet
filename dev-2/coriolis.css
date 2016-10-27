@@ -1,0 +1,88 @@
+.sheet-container, .sheet-container * {
+  box-sizing: border-box;
+}
+
+div[class^="sheet-box-"] {
+  /*border: 1px solid maroon;*/
+  /*float: left;*/
+}
+
+table {
+  border: 2px solid #62584d;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+tr:last-of-type {
+  border-bottom: 0px;
+}
+
+.sheet-container {
+  min-width: 640px;
+  max-width: 800px;
+}
+
+.sheet-box-1 {
+  width: 33%;
+  float: left;
+  padding-right: 0.8%;
+}
+
+.sheet-box-2 {
+  width: 67%;
+  float: left;
+  padding-left: 0.8%;
+}
+
+.sheet-box-3 {
+  width: 67%;
+  float: left;
+  padding-right: 0.8%;
+}
+
+.sheet-box-4 {
+  width: 33%;
+  float: left;
+  padding-left: 0.8%;
+}
+
+.sheet-clear {
+  clear: both;
+}
+
+.sheet-tab-personal col:first-of-type {
+  width: 59%;
+}
+
+.sheet-tab-radiation {
+  width: 48.5%;
+  float: left;
+}
+
+.sheet-tab-experience {
+  width: 49%;
+  float: right;
+}
+
+
+/* Adjust textbox widths for Appearance Table */
+.sheet-tab-appearance tr:nth-of-type(2) input {
+  /*width: 20%;*/
+}
+
+.sheet-tab-appearance tr:nth-of-type(3) input {
+  /*width: 50%;*/
+}
+/**********************************/
+
+.sheet-num-input {}
+
+th {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica;
+}

@@ -2,12 +2,12 @@
 <head>
     <link href="base.css" rel="stylesheet" />
     <link href="app.css" rel="stylesheet" />
-    <link href="Test.css" rel="stylesheet" />
+    <link href="coriolis.css" rel="stylesheet" />
 </head>
 <body>
     <div tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable"
          role="dialog" aria-labelledby="ui-id-9"
-         style="outline: 0px; left: 10px; top: 10px; width:900px; height: 600px; display: block; position: absolute; z-index: 10508;">
+         style="outline: 0px; left: 10px; top: 10px; width:900px; height: 900px; display: block; position: absolute; z-index: 10508;">
         <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
             <span class="ui-dialog-title" id="ui-id-9">
                 <button class="showpopout btn pictos" style="margin-right: 15px;">|</button>Player Character
@@ -16,7 +16,7 @@
             </span>
             <a class="ui-dialog-titlebar-close ui-corner-all" role="button" href="#"><span class="ui-icon ui-icon-closethick">close</span></a>
         </div>
-        <div class="dialog characterdialog ui-dialog-content ui-widget-content" style="width: 900px; height: 500px; display: block;" data-characterid="-Ji7YcR9wXd4AQI7VEdi" scrolltop="0" scrollleft="0">
+        <div class="dialog characterdialog ui-dialog-content ui-widget-content" style="width: 860px; height: 800px; display: block;" data-characterid="-Ji7YcR9wXd4AQI7VEdi" scrolltop="0" scrollleft="0">
             <div class="dialog largedialog characterviewer" style="display: block;">
                 <ul class="nav nav-tabs">
                     <li><a href="javascript:void(0);" data-tab="bioinfo">Bio &amp; Info</a></li>
@@ -29,7 +29,170 @@
                     <form class="sheetform">
                         <div class="charsheet tab-pane" style="display: block;">
                             <!-- Begin custom sheet here -->
-                            
+                            <div class='sheet-container'>
+                                <div class='sheet-box-1'>
+                                    <table class='sheet-tab-attributes'>
+                                        <col>
+                                        <col>
+                                        <tr>
+                                          <th colspan='2'>Attributes</th>
+                                        </tr>
+                                        <tr>
+                                          <td>STRENGTH</td>
+                                          <td><input class="sheet-num-input" type='number' value='attr_strength'></td>
+                                        </tr>
+                                        <tr>
+                                          <td>AGILITY</td>
+                                          <td><input class="sheet-num-input" type='number' value='attr_agility'></td>
+                                        </tr>
+                                        <tr>
+                                          <td>WITS</td>
+                                          <td><input class="sheet-num-input" type='number' value='attr_wits'></td>
+                                        </tr>
+                                        <tr>
+                                          <td>EMPATHY</td>
+                                          <td><input class="sheet-num-input" type='number' value='attr_empathy'></td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-trauma'>
+                                        <tr>
+                                          <th>TRAUMA</th>
+                                        </tr>
+                                        <tr>
+                                          <td>HIT POINTS (STR+AGI)<input class='sheet-num-input' type='number' value='@{strength}+@{agility}'></td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <input type='checkbox' value='1'>
+                                            <input type='checkbox' value='1'>
+                                            <input type='checkbox' value='1'>
+                                          </td>
+                                        </tr>
+                                        <tr><td>Critical Injuries:</td></tr>
+                                        <tr>
+                                          <td><input type="text"></td>
+                                        </tr>
+                                        <tr><td><input type="text" name=""></td></tr>
+                                        <tr><td><input type="text" name=""></td></tr>
+                                        <tr><td>MIND POINTS (WIT+EMP) <input type="text" name="" id=""></td></tr>
+                                        <tr>
+                                            <td>
+                                              <input type='checkbox' value='1'>
+                                              <input type='checkbox' value='1'>
+                                              <input type='checkbox' value='1'>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class='sheet-box-2'>
+                                    <table class='sheet-tab-personal'>
+                                        <col><col>
+                                        <tr>
+                                            <td>Name: <input type='text' name='attr_name'></td>
+                                            <td>Background: <input type='text' name='attr_background'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Concept: <input type='text' name='attr_concept'></td>
+                                            <td>Icon: <input type='text' name='attr_icon'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Group Concept: <input type='text' name='attr_group-concept'></td>
+                                            <td>Reputation: <input class='sheet-num-input' type='number' name='attr_reputation'></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan='2'>Personal Problem: <input type='text' name='attr_personal-problem'></td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-appearance'>
+                                        <tr>
+                                            <th>APPEARANCE</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Face: </span>
+                                                <span><input type='text' name='attr_face'></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clothing: <input type='text' name='attr_clothing'></td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-relationships'>
+                                        <col><col><col><col>
+                                        <tr>
+                                            <th colspan='3'>RELATIONSHIPS</th>
+                                            <th>BUDDY</th>
+                                        </tr>
+                                        <tr>
+                                            <td>PC 1:</td>
+                                            <td><input type='text' name='attr_name-pc1' value='Name'></td>
+                                            <td><input type='text' name='attr_comment-pc1' value='Comment'></td>
+                                            <td><input type='checkbox' name='attr_buddy-pc1'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PC 2:</td>
+                                            <td><input type='text' name='attr_name-pc2' value='Name'></td>
+                                            <td><input type='text' name='attr_comment-pc2' value='Comment'></td>
+                                            <td><input type='checkbox' name='attr_buddy-pc2'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PC 3:</td>
+                                            <td><input type='text' name='attr_name-pc3' value='Name'></td>
+                                            <td><input type='text' name='attr_comment-pc3' value='Comment'></td>
+                                            <td><input type='checkbox' name='attr_buddy-pc3'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PC 4:</td>
+                                            <td><input type='text' name='attr_name-pc4' value='Name'></td>
+                                            <td><input type='text' name='attr_comment-pc4' value='Comment'></td>
+                                            <td><input type='checkbox' name='attr_buddy-pc4'></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- <div class='sheet-clear'></div>  -->
+                                <div class='sheet-box-3 sheet-clear'>
+                                    <table class='sheet-tab-radiation'>
+                                        <tr><th>RADIATION</th></tr>
+                                        <tr>
+                                            <td>
+                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='' value='1'>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-experience'>
+                                        <tr><th>EXPERIENCE</th></tr>
+                                        <tr>
+                                            <td>
+                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='' value='1'>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-skills'>
+                                        <col><col><col><col>
+                                        <tr>
+                                            <th>SKILLS</th><th>GENERAL</th><th></th><th>ADVANCED</th>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <col><col><col><col><col><col><col><col>
+                                        <tr>
+                                            <th>WEAPONS</th>
+                                            <th>BONUS</th>
+                                            <th>INIT</th>
+                                            <th>DAMAGE</th>
+                                            <th>CRIT</th>
+                                            <th>RANGE</th>
+                                            <th>COMMENTS</th>
+                                            <th>RELOADS</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class='sheet-box-4'>4</div>
+                            </div>
                             <!-- End custom sheet here -->
                         </div>
                     </form>
