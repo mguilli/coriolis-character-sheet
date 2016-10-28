@@ -1,3 +1,5 @@
+body {color: black;}
+
 .sheet-container, .sheet-container * {
   box-sizing: border-box;
 }
@@ -9,21 +11,66 @@ div[class^="sheet-box-"] {
 
 input[type='text'] {
   width: 40%;
+  height: 28px !important;
+  background-color: #f2f1ef;
+  border-color: rgb(204,204,204);
 }
+
+input[type='number'] {
+  background-color: #f2f1ef;
+  border-color: #62584d;  
+  height: 28px !important;
+  width: 40px !important;
+  float: right;
+}
+
+/* General Table formatting */
 
 table {
   border: 2px solid #62584d;
   width: 100%;
   margin-bottom: 14px;
+  background-color: #e3deda;
+  font-size: 12px;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 
 tr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #62584d;
 }
 
 tr:last-of-type {
   border-bottom: 0px;
 }
+
+th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica;
+  padding: 6px;
+  text-align: left;
+  border-left: 1px solid #62584d;
+}
+
+th:first-of-type {border-left: none;}
+
+th:nth-of-type(n+2) {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+}
+
+td:first-of-type {border-left: none;}
+
+td {
+  border-left: 1px solid #62584d;
+  padding: 1px 6px;  
+}
+
+/* Sheet layout format */
 
 .sheet-container {
   min-width: 640px;
@@ -58,10 +105,6 @@ tr:last-of-type {
   clear: both;
 }
 
-.sheet-tab-personal col:first-of-type {
-  width: 59%;
-}
-
 .sheet-tab-radiation {
   width: 48.5%;
   float: left;
@@ -70,6 +113,37 @@ tr:last-of-type {
 .sheet-tab-experience {
   width: 49%;
   float: right;
+}
+
+/* Individual table formats */
+
+.sheet-tab-attributes, 
+.sheet-tab-skills, 
+.sheet-tab-radiation,
+.sheet-tab-experience,
+.sheet-dark-cells, 
+.sheet-tab-weapons td:last-of-type {
+  background-color: #a29a94;
+}
+
+.sheet-tab-trauma tr:nth-of-type(2),
+.sheet-tab-trauma tr:nth-of-type(4),
+.sheet-tab-trauma tr:nth-of-type(8) {
+  /*border-bottom: none;*/
+}
+
+.sheet-tab-attributes td {
+  border-left: none;
+  font-size: 14px;
+}
+
+.sheet-tab-personal col:first-of-type {
+  width: 59%;
+}
+
+.sheet-tab-personal span {
+  padding-top: 6px;
+  float: left;
 }
 
 
@@ -82,11 +156,3 @@ tr:last-of-type {
   /*width: 50%;*/
 }
 /**********************************/
-
-.sheet-num-input {}
-
-th {
-  font-weight: bold;
-  font-size: 14px;
-  font-family: Helvetica;
-}
