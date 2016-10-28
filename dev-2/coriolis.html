@@ -35,37 +35,49 @@
                                         <col>
                                         <col>
                                         <tr>
-                                          <th colspan='2'>Attributes</th>
+                                            <th colspan='2'>Attributes</th>
                                         </tr>
                                         <tr>
-                                          <td>STRENGTH</td>
-                                          <td><input class="sheet-num-input" type='number' value='attr_strength'></td>
+                                            <td>STRENGTH</td>
+                                            <td><input class="sheet-num-input" type='number' value='attr_strength'></td>
                                         </tr>
                                         <tr>
-                                          <td>AGILITY</td>
-                                          <td><input class="sheet-num-input" type='number' value='attr_agility'></td>
+                                            <td>AGILITY</td>
+                                            <td><input class="sheet-num-input" type='number' value='attr_agility'></td>
                                         </tr>
                                         <tr>
-                                          <td>WITS</td>
-                                          <td><input class="sheet-num-input" type='number' value='attr_wits'></td>
+                                            <td>WITS</td>
+                                            <td><input class="sheet-num-input" type='number' value='attr_wits'></td>
                                         </tr>
                                         <tr>
-                                          <td>EMPATHY</td>
-                                          <td><input class="sheet-num-input" type='number' value='attr_empathy'></td>
+                                            <td>EMPATHY</td>
+                                            <td><input class="sheet-num-input" type='number' value='attr_empathy'></td>
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-trauma'>
                                         <tr>
-                                          <th>TRAUMA</th>
+                                            <th>TRAUMA</th>
                                         </tr>
                                         <tr>
-                                          <td>HIT POINTS (STR+AGI)<input class='sheet-num-input' type='number' value='@{strength}+@{agility}'></td>
+                                            <td>
+                                                HIT POINTS (STR+AGI)
+                                                <input type='number' name='attr_hitpoints' value='@{strength}+@{agility}'>
+                                            </td>
                                         </tr>
                                         <tr>
                                           <td>
-                                            <input type='checkbox' value='1'>
-                                            <input type='checkbox' value='1'>
-                                            <input type='checkbox' value='1'>
+                                            <input type='checkbox' name='attr_hp1' value='1'>
+                                            <input type='checkbox' name='attr_hp2' value='1'>
+                                            <input type='checkbox' name='attr_hp3' value='1'>
+                                            <input type='checkbox' name='attr_hp4' value='1'>
+                                            <input type='checkbox' name='attr_hp5' value='1'>
+                                            <input type='checkbox' name='attr_hp6' value='1'>
+                                            <input type='checkbox' name='attr_hp7' value='1'>
+                                            <input type='checkbox' name='attr_hp8' value='1'>
+                                            <input type='checkbox' name='attr_hp9' value='1'>
+                                            <input type='checkbox' name='attr_hp10' value='1'>
+                                            <input type='checkbox' name='attr_hp11' value='1'>
+                                            <input type='checkbox' name='attr_hp12' value='1'>
                                           </td>
                                         </tr>
                                         <tr><td>Critical Injuries:</td></tr>
@@ -74,12 +86,26 @@
                                         </tr>
                                         <tr><td><input type="text" name=""></td></tr>
                                         <tr><td><input type="text" name=""></td></tr>
-                                        <tr><td>MIND POINTS (WIT+EMP) <input type="text" name="" id=""></td></tr>
                                         <tr>
                                             <td>
-                                              <input type='checkbox' value='1'>
-                                              <input type='checkbox' value='1'>
-                                              <input type='checkbox' value='1'>
+                                                MIND POINTS (WIT+EMP)
+                                                <input type="number" name="attr_mindpoints" value='@{wits}+@{empathy}'>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type='checkbox' name='attr_mp1' value='1'>
+                                                <input type='checkbox' name='attr_mp2' value='1'>
+                                                <input type='checkbox' name='attr_mp3' value='1'>
+                                                <input type='checkbox' name='attr_mp4' value='1'>
+                                                <input type='checkbox' name='attr_mp5' value='1'>
+                                                <input type='checkbox' name='attr_mp6' value='1'>
+                                                <input type='checkbox' name='attr_mp7' value='1'>
+                                                <input type='checkbox' name='attr_mp8' value='1'>
+                                                <input type='checkbox' name='attr_mp9' value='1'>
+                                                <input type='checkbox' name='attr_mp10' value='1'>
+                                                <input type='checkbox' name='attr_mp11' value='1'>
+                                                <input type='checkbox' name='attr_mp12' value='1'>
                                             </td>
                                         </tr>
                                     </table>
@@ -97,7 +123,7 @@
                                         </tr>
                                         <tr>
                                             <td>Group Concept: <input type='text' name='attr_group-concept'></td>
-                                            <td>Reputation: <input class='sheet-num-input' type='number' name='attr_reputation'></td>
+                                            <td>Reputation: <input type='number' name='attr_reputation'></td>
                                         </tr>
                                         <tr>
                                             <td colspan='2'>Personal Problem: <input type='text' name='attr_personal-problem'></td>
@@ -155,9 +181,16 @@
                                         <tr><th>RADIATION</th></tr>
                                         <tr>
                                             <td>
-                                                <input type='checkbox' name='' value='1'>
-                                                <input type='checkbox' name='' value='1'>
-                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='attr_rp1' value='1'>
+                                                <input type='checkbox' name='attr_rp2' value='1'>
+                                                <input type='checkbox' name='attr_rp3' value='1'>
+                                                <input type='checkbox' name='attr_rp4' value='1'>
+                                                <input type='checkbox' name='attr_rp5' value='1'>
+                                                <input type='checkbox' name='attr_rp6' value='1'>
+                                                <input type='checkbox' name='attr_rp7' value='1'>
+                                                <input type='checkbox' name='attr_rp8' value='1'>
+                                                <input type='checkbox' name='attr_rp9' value='1'>
+                                                <input type='checkbox' name='attr_rp10' value='1'>
                                             </td>
                                         </tr>
                                     </table>
@@ -165,9 +198,16 @@
                                         <tr><th>EXPERIENCE</th></tr>
                                         <tr>
                                             <td>
-                                                <input type='checkbox' name='' value='1'>
-                                                <input type='checkbox' name='' value='1'>
-                                                <input type='checkbox' name='' value='1'>
+                                                <input type='checkbox' name='attr_ep1' value='1'>
+                                                <input type='checkbox' name='attr_ep2' value='1'>
+                                                <input type='checkbox' name='attr_ep3' value='1'>
+                                                <input type='checkbox' name='attr_ep4' value='1'>
+                                                <input type='checkbox' name='attr_ep5' value='1'>
+                                                <input type='checkbox' name='attr_ep6' value='1'>
+                                                <input type='checkbox' name='attr_ep7' value='1'>
+                                                <input type='checkbox' name='attr_ep8' value='1'>
+                                                <input type='checkbox' name='attr_ep9' value='1'>
+                                                <input type='checkbox' name='attr_ep10' value='1'>
                                             </td>
                                         </tr>
                                     </table>
@@ -176,8 +216,56 @@
                                         <tr>
                                             <th>SKILLS</th><th>GENERAL</th><th></th><th>ADVANCED</th>
                                         </tr>
+                                        <tr>
+                                            <td>DEXTERITY (AGI)</td>
+                                            <td><input type='number' name='attr_dexterity'></td>
+                                            <td>COMMAND (EMP)</td>
+                                            <td><input type='number' name='attr_command'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>FORCE (STR)</td>
+                                            <td><input type='number' name='attr_force'></td>
+                                            <td>CULTURE (EMP)</td>
+                                            <td><input type='number' name='attr_culture'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>INFILTRATION (AGI)</td>
+                                            <td><input type='number' name='attr_infiltration'></td>
+                                            <td>DATA DJINN (WIT)</td>
+                                            <td><input type='number' name='attr_data-djinn'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MANIPULATION (EMP)</td>
+                                            <td><input type='number' name='attr_manipulation'></td>
+                                            <td>MEDICURGY (WIT)</td>
+                                            <td><input type='number' name='attr_medicurgy'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MELEE COMBAT (STR)</td>
+                                            <td><input type='number' name='attr_melee-combat'></td>
+                                            <td>MYSTIC POWERS (EMP)</td>
+                                            <td><input type='number' name='attr_mystic-powers'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>OBSERVATION (WIT)</td>
+                                            <td><input type='number' name='attr_observation'></td>
+                                            <td>PILOT (AGI)</td>
+                                            <td><input type='number' name='attr_pilot'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>RANGED COMBAT (AGI)</td>
+                                            <td><input type='number' name='attr_ranged-combat'></td>
+                                            <td>SCIENCE (WIT)</td>
+                                            <td><input type='number' name='attr_science'></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SURVIVAL (WIT)</td>
+                                            <td><input type='number' name='attr_survival'></td>
+                                            <td>TECHNOLOGY (WIT)</td>
+                                            <td><input type='number' name='attr_technology'></td>
+                                        </tr>
                                     </table>
-                                    <table>
+                                    <table class='sheet-tab-weapons'>
                                         <col><col><col><col><col><col><col><col>
                                         <tr>
                                             <th>WEAPONS</th>
@@ -189,9 +277,151 @@
                                             <th>COMMENTS</th>
                                             <th>RELOADS</th>
                                         </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_name-w1'></td>
+                                            <td><input type='number' name='attr_bonus-w1'></td>
+                                            <td><input type='number' name='attr_init-w1'></td>
+                                            <td><input type='number' name='attr_damage-w1'></td>
+                                            <td><input type='number' name='attr_crit-w1'></td>
+                                            <td><input type='text' name='attr_range-w1'></td>
+                                            <td><input type='text' name='attr_comment-w1'></td>
+                                            <td>
+                                                <input type='checkbox' name='attr_reload-w1-1' value='1'>
+                                                <input type='checkbox' name='attr_reload-w1-2' value='1'>
+                                                <input type='checkbox' name='attr_reload-w1-3' value='1'>
+                                                <input type='checkbox' name='attr_reload-w1-4' value='1'>
+                                                <input type='checkbox' name='attr_reload-w1-5' value='1'>
+                                                <input type='checkbox' name='attr_reload-w1-6' value='1'>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_name-w2'></td>
+                                            <td><input type='number' name='attr_bonus-w2'></td>
+                                            <td><input type='number' name='attr_init-w2'></td>
+                                            <td><input type='number' name='attr_damage-w2'></td>
+                                            <td><input type='number' name='attr_crit-w2'></td>
+                                            <td><input type='text' name='attr_range-w2'></td>
+                                            <td><input type='text' name='attr_comment-w2'></td>
+                                            <td>
+                                                <input type='checkbox' name='attr_reload-w2-1' value='1'>
+                                                <input type='checkbox' name='attr_reload-w2-2' value='1'>
+                                                <input type='checkbox' name='attr_reload-w2-3' value='1'>
+                                                <input type='checkbox' name='attr_reload-w2-4' value='1'>
+                                                <input type='checkbox' name='attr_reload-w2-5' value='1'>
+                                                <input type='checkbox' name='attr_reload-w2-6' value='1'>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_name-w3'></td>
+                                            <td><input type='number' name='attr_bonus-w3'></td>
+                                            <td><input type='number' name='attr_init-w3'></td>
+                                            <td><input type='number' name='attr_damage-w3'></td>
+                                            <td><input type='number' name='attr_crit-w3'></td>
+                                            <td><input type='text' name='attr_range-w3'></td>
+                                            <td><input type='text' name='attr_comment-w3'></td>
+                                            <td>
+                                                <input type='checkbox' name='attr_reload-w3-1' value='1'>
+                                                <input type='checkbox' name='attr_reload-w3-2' value='1'>
+                                                <input type='checkbox' name='attr_reload-w3-3' value='1'>
+                                                <input type='checkbox' name='attr_reload-w3-4' value='1'>
+                                                <input type='checkbox' name='attr_reload-w3-5' value='1'>
+                                                <input type='checkbox' name='attr_reload-w3-6' value='1'>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_name-w4'></td>
+                                            <td><input type='number' name='attr_bonus-w4'></td>
+                                            <td><input type='number' name='attr_init-w4'></td>
+                                            <td><input type='number' name='attr_damage-w4'></td>
+                                            <td><input type='number' name='attr_crit-w4'></td>
+                                            <td><input type='text' name='attr_range-w4'></td>
+                                            <td><input type='text' name='attr_comment-w4'></td>
+                                            <td>
+                                                <input type='checkbox' name='attr_reload-w4-1' value='1'>
+                                                <input type='checkbox' name='attr_reload-w4-2' value='1'>
+                                                <input type='checkbox' name='attr_reload-w4-3' value='1'>
+                                                <input type='checkbox' name='attr_reload-w4-4' value='1'>
+                                                <input type='checkbox' name='attr_reload-w4-5' value='1'>
+                                                <input type='checkbox' name='attr_reload-w4-6' value='1'>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
-                                <div class='sheet-box-4'>4</div>
+                                <div class='sheet-box-4'>
+                                    <table class='sheet-tab-talents'>
+                                        <tr>
+                                            <th>TALENTS</th>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_talent-1'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_talent-2'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_talent-3'></td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-gear'>
+                                        <col><col>
+                                        <tr>
+                                            <th>GEAR</th><th>BONUS</th>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-1'></td>
+                                            <td><input type='number' name='attr_gear-bonus-1'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-2'></td>
+                                            <td><input type='number' name='attr_gear-bonus-2'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-3'></td>
+                                            <td><input type='number' name='attr_gear-bonus-3'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-4'></td>
+                                            <td><input type='number' name='attr_gear-bonus-4'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-5'></td>
+                                            <td><input type='number' name='attr_gear-bonus-5'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-6'></td>
+                                            <td><input type='number' name='attr_gear-bonus-6'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-7'></td>
+                                            <td><input type='number' name='attr_gear-bonus-7'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-8'></td>
+                                            <td><input type='number' name='attr_gear-bonus-8'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-9'></td>
+                                            <td><input type='number' name='attr_gear-bonus-9'></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_gear-name-10'></td>
+                                            <td><input type='number' name='attr_gear-bonus-10'></td>
+                                        </tr>
+                                    </table>
+                                    <table class='sheet-tab-armor'>
+                                        <col><col><col>
+                                        <tr>
+                                            <th>ARMOR</th>
+                                            <th>RATING</th>
+                                            <th>COMMENT</th>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_armor-name'></td>
+                                            <td><input type='number' name='attr_armor-rating'></td>
+                                            <td><input type='text' name='attr_armor-comment'></td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                             <!-- End custom sheet here -->
                         </div>
