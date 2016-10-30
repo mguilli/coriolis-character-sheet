@@ -32,26 +32,24 @@
                             <div class='sheet-container'>
                                 <div class='sheet-box-1'>
                                     <table class='sheet-tab-attributes'>
-                                        <col>
-                                        <col>
                                         <tr>
                                             <th colspan='2'>ATTRIBUTES</th>
                                         </tr>
                                         <tr>
                                             <td>STRENGTH</td>
-                                            <td><input class="sheet-num-input" type='number' value='attr_strength'></td>
+                                            <td><input class="sheet-num-input" type='number' name='attr_strength'></td>
                                         </tr>
                                         <tr>
                                             <td>AGILITY</td>
-                                            <td><input class="sheet-num-input" type='number' value='attr_agility'></td>
+                                            <td><input class="sheet-num-input" type='number' name='attr_agility'></td>
                                         </tr>
                                         <tr>
                                             <td>WITS</td>
-                                            <td><input class="sheet-num-input" type='number' value='attr_wits'></td>
+                                            <td><input class="sheet-num-input" type='number' name='attr_wits'></td>
                                         </tr>
                                         <tr>
                                             <td>EMPATHY</td>
-                                            <td><input class="sheet-num-input" type='number' value='attr_empathy'></td>
+                                            <td><input class="sheet-num-input" type='number' name='attr_empathy'></td>
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-trauma'>
@@ -60,12 +58,12 @@
                                         </tr>
                                         <tr class='sheet-dark-cells'>
                                             <td>
-                                                HIT POINTS (STR+AGI)
+                                                <span>HIT POINTS (STR+AGI)</span>
                                                 <input type='number' name='attr_hitpoints' value='@{strength}+@{agility}'>
                                             </td>
                                         </tr>
                                         <tr class='sheet-dark-cells'>
-                                          <td>
+                                          <td class='sheet-center'>
                                             <input type='checkbox' name='attr_hp1' value='1'>
                                             <input type='checkbox' name='attr_hp2' value='1'>
                                             <input type='checkbox' name='attr_hp3' value='1'>
@@ -88,12 +86,12 @@
                                         <tr><td><input type="text" name=""></td></tr>
                                         <tr class='sheet-dark-cells'>
                                             <td>
-                                                MIND POINTS (WIT+EMP)
+                                                <span>MIND POINTS (WIT+EMP)</span>
                                                 <input type="number" name="attr_mindpoints" value='@{wits}+@{empathy}'>
                                             </td>
                                         </tr>
                                         <tr class='sheet-dark-cells'>
-                                            <td>
+                                            <td class='sheet-center'>
                                                 <input type='checkbox' name='attr_mp1' value='1'>
                                                 <input type='checkbox' name='attr_mp2' value='1'>
                                                 <input type='checkbox' name='attr_mp3' value='1'>
@@ -112,21 +110,20 @@
                                 </div>
                                 <div class='sheet-box-2'>
                                     <table class='sheet-tab-personal'>
-                                        <col><col>
                                         <tr>
-                                            <td>Name: <input type='text' name='attr_name'></td>
-                                            <td>Background: <input type='text' name='attr_background'></td>
+                                            <td style='width: 59%;'><span>Name: </span><input type='text' name='attr_character_name'></td>
+                                            <td style='width: 41%;'><span>Background: </span><input type='text' name='attr_background'></td>
                                         </tr>
                                         <tr>
-                                            <td>Concept: <input type='text' name='attr_concept'></td>
-                                            <td>Icon: <input type='text' name='attr_icon'></td>
+                                            <td><span>Concept: </span><input type='text' name='attr_concept'></td>
+                                            <td><span>Icon: </span><input type='text' name='attr_icon'></td>
                                         </tr>
                                         <tr>
-                                            <td>Group Concept: <input type='text' name='attr_group-concept'></td>
+                                            <td><span>Group Concept: </span><input type='text' name='attr_group-concept'></td>
                                             <td class='sheet-dark-cells'><span>Reputation: </span><input type='number' name='attr_reputation'></td>
                                         </tr>
                                         <tr>
-                                            <td colspan='2'>Personal Problem: <input type='text' name='attr_personal-problem'></td>
+                                            <td colspan='2'><span>Personal Problem: </span><input type='text' name='attr_personal-problem'></td>
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-appearance'>
@@ -136,24 +133,23 @@
                                         <tr>
                                             <td>
                                                 <span>Face: </span>
-                                                <span><input type='text' name='attr_face'></span>
+                                                <input type='text' name='attr_face'>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Clothing: <input type='text' name='attr_clothing'></td>
+                                            <td><span>Clothing: </span><input type='text' name='attr_clothing'></td>
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-relationships'>
-                                        <col><col><col><col>
                                         <tr>
                                             <th colspan='3'>RELATIONSHIPS</th>
                                             <th>BUDDY</th>
                                         </tr>
                                         <tr>
-                                            <td>PC 1:</td>
-                                            <td><input type='text' name='attr_name-pc1' value='Name'></td>
-                                            <td><input type='text' name='attr_comment-pc1' value='Comment'></td>
-                                            <td><input type='checkbox' name='attr_buddy-pc1'></td>
+                                            <td style='width: 8%;'>PC 1:</td>
+                                            <td style='width: 25%;'><input type='text' name='attr_name-pc1' value='Name'></td>
+                                            <td style='width: 59%;'><input type='text' name='attr_comment-pc1' value='Comment'></td>
+                                            <td style='width: 8%;'><input type='checkbox' name='attr_buddy-pc1'></td>
                                         </tr>
                                         <tr>
                                             <td>PC 2:</td>
@@ -212,7 +208,6 @@
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-skills'>
-                                        <col><col><col><col>
                                         <tr>
                                             <th>SKILLS</th><th>GENERAL</th><th></th><th>ADVANCED</th>
                                         </tr>
@@ -266,86 +261,42 @@
                                         </tr>
                                     </table>
                                     <table class='sheet-tab-weapons'>
-                                        <col><col><col><col><col><col><col><col>
                                         <tr>
-                                            <th>WEAPONS</th>
-                                            <th>BONUS</th>
-                                            <th>INIT</th>
-                                            <th>DAMAGE</th>
-                                            <th>CRIT</th>
-                                            <th>RANGE</th>
-                                            <th>COMMENTS</th>
-                                            <th>RELOADS</th>
-                                        </tr>
-                                        <tr>
-                                            <td><input type='text' name='attr_name-w1'></td>
-                                            <td><input type='number' name='attr_bonus-w1'></td>
-                                            <td><input type='number' name='attr_init-w1'></td>
-                                            <td><input type='number' name='attr_damage-w1'></td>
-                                            <td><input type='number' name='attr_crit-w1'></td>
-                                            <td><input type='text' name='attr_range-w1'></td>
-                                            <td><input type='text' name='attr_comment-w1'></td>
-                                            <td>
-                                                <input type='checkbox' name='attr_reload-w1-1' value='1'>
-                                                <input type='checkbox' name='attr_reload-w1-2' value='1'>
-                                                <input type='checkbox' name='attr_reload-w1-3' value='1'>
-                                                <input type='checkbox' name='attr_reload-w1-4' value='1'>
-                                                <input type='checkbox' name='attr_reload-w1-5' value='1'>
-                                                <input type='checkbox' name='attr_reload-w1-6' value='1'>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type='text' name='attr_name-w2'></td>
-                                            <td><input type='number' name='attr_bonus-w2'></td>
-                                            <td><input type='number' name='attr_init-w2'></td>
-                                            <td><input type='number' name='attr_damage-w2'></td>
-                                            <td><input type='number' name='attr_crit-w2'></td>
-                                            <td><input type='text' name='attr_range-w2'></td>
-                                            <td><input type='text' name='attr_comment-w2'></td>
-                                            <td>
-                                                <input type='checkbox' name='attr_reload-w2-1' value='1'>
-                                                <input type='checkbox' name='attr_reload-w2-2' value='1'>
-                                                <input type='checkbox' name='attr_reload-w2-3' value='1'>
-                                                <input type='checkbox' name='attr_reload-w2-4' value='1'>
-                                                <input type='checkbox' name='attr_reload-w2-5' value='1'>
-                                                <input type='checkbox' name='attr_reload-w2-6' value='1'>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type='text' name='attr_name-w3'></td>
-                                            <td><input type='number' name='attr_bonus-w3'></td>
-                                            <td><input type='number' name='attr_init-w3'></td>
-                                            <td><input type='number' name='attr_damage-w3'></td>
-                                            <td><input type='number' name='attr_crit-w3'></td>
-                                            <td><input type='text' name='attr_range-w3'></td>
-                                            <td><input type='text' name='attr_comment-w3'></td>
-                                            <td>
-                                                <input type='checkbox' name='attr_reload-w3-1' value='1'>
-                                                <input type='checkbox' name='attr_reload-w3-2' value='1'>
-                                                <input type='checkbox' name='attr_reload-w3-3' value='1'>
-                                                <input type='checkbox' name='attr_reload-w3-4' value='1'>
-                                                <input type='checkbox' name='attr_reload-w3-5' value='1'>
-                                                <input type='checkbox' name='attr_reload-w3-6' value='1'>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type='text' name='attr_name-w4'></td>
-                                            <td><input type='number' name='attr_bonus-w4'></td>
-                                            <td><input type='number' name='attr_init-w4'></td>
-                                            <td><input type='number' name='attr_damage-w4'></td>
-                                            <td><input type='number' name='attr_crit-w4'></td>
-                                            <td><input type='text' name='attr_range-w4'></td>
-                                            <td><input type='text' name='attr_comment-w4'></td>
-                                            <td>
-                                                <input type='checkbox' name='attr_reload-w4-1' value='1'>
-                                                <input type='checkbox' name='attr_reload-w4-2' value='1'>
-                                                <input type='checkbox' name='attr_reload-w4-3' value='1'>
-                                                <input type='checkbox' name='attr_reload-w4-4' value='1'>
-                                                <input type='checkbox' name='attr_reload-w4-5' value='1'>
-                                                <input type='checkbox' name='attr_reload-w4-6' value='1'>
-                                            </td>
+                                            <th style='width: 23%;'>WEAPONS</th>
+                                            <th style='width: 8%;'>BONUS</th>
+                                            <th style='width: 8%;'>INIT</th>
+                                            <th style='width: 8%;'>DAMAGE</th>
+                                            <th style='width: 8%;'>CRIT</th>
+                                            <th style='width: 10%;'>RANGE</th>
+                                            <th style='width: 23%;'>COMMENTS</th>
+                                            <th style='width: 12%;'>RELOADS</th>
                                         </tr>
                                     </table>
+                                    <fieldset class='repeating_weapons'>
+                                        <table>
+                                            <tr>
+                                                <td style='width: 23%;'><input type='text' name='attr_weapon-name'></td>
+                                                <td style='width: 8%;'><input type='number' name='attr_weapon-bonus'></td>
+                                                <td style='width: 8%;'><input type='number' name='attr_weapon-init'></td>
+                                                <td style='width: 8%;'><input type='number' name='attr_weapon-damage'></td>
+                                                <td style='width: 8%;'><input type='number' name='attr_weapon-crit'></td>
+                                                <td style='width: 10%;'><input type='text' name='attr_weapon-range'></td>
+                                                <td style='width: 23%;'><input type='text' name='attr_weapon-comment'></td>
+                                                <td style='width: 12%;'>
+                                                    <div>
+                                                        <input type='checkbox' name='attr_weapon-reload-1' value='1'>
+                                                        <input type='checkbox' name='attr_weapon-reload-2' value='1'>
+                                                        <input type='checkbox' name='attr_weapon-reload-3' value='1'>
+                                                    <div>
+                                                    </div>
+                                                        <input type='checkbox' name='attr_weapon-reload-4' value='1'>
+                                                        <input type='checkbox' name='attr_weapon-reload-5' value='1'>
+                                                        <input type='checkbox' name='attr_weapon-reload-6' value='1'>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </fieldset>
                                 </div>
                                 <div class='sheet-box-4'>
                                     <table class='sheet-tab-talents'>
@@ -362,8 +313,19 @@
                                             <td><input type='text' name='attr_talent-3'></td>
                                         </tr>
                                     </table>
+                                    <table class='sheet-tab-armor'>
+                                        <tr>
+                                            <th>ARMOR</th>
+                                            <th>RATING</th>
+                                            <th>COMMENT</th>
+                                        </tr>
+                                        <tr>
+                                            <td><input type='text' name='attr_armor-name'></td>
+                                            <td><input type='number' name='attr_armor-rating'></td>
+                                            <td><input type='text' name='attr_armor-comment'></td>
+                                        </tr>
+                                    </table>
                                     <table class='sheet-tab-gear'>
-                                        <col><col>
                                         <tr>
                                             <th>GEAR</th><th>BONUS</th>
                                         </tr>
@@ -406,19 +368,6 @@
                                         <tr>
                                             <td><input type='text' name='attr_gear-name-10'></td>
                                             <td><input type='number' name='attr_gear-bonus-10'></td>
-                                        </tr>
-                                    </table>
-                                    <table class='sheet-tab-armor'>
-                                        <col><col><col>
-                                        <tr>
-                                            <th>ARMOR</th>
-                                            <th>RATING</th>
-                                            <th>COMMENT</th>
-                                        </tr>
-                                        <tr>
-                                            <td><input type='text' name='attr_armor-name'></td>
-                                            <td><input type='number' name='attr_armor-rating'></td>
-                                            <td><input type='text' name='attr_armor-comment'></td>
                                         </tr>
                                     </table>
                                 </div>
