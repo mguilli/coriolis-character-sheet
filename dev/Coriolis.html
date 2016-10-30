@@ -61,7 +61,7 @@
                                         <tr class='sheet-dark-cells'>
                                             <td>
                                                 <span>HIT POINTS (STR+AGI)</span>
-                                                <input type='number' name='attr_hitpoints' value='@{strength}+@{agility}'>
+                                                <input type='number' name='attr_hitpoints' value='@{strength}+@{agility}' disabled='true'>
                                             </td>
                                         </tr>
                                         <tr class='sheet-dark-cells'>
@@ -89,7 +89,7 @@
                                         <tr class='sheet-dark-cells'>
                                             <td>
                                                 <span>MIND POINTS (WIT+EMP)</span>
-                                                <input type="number" name="attr_mindpoints" value='@{wits}+@{empathy}'>
+                                                <input type="number" name="attr_mindpoints" value='@{wits}+@{empathy}' disable='true'>
                                             </td>
                                         </tr>
                                         <tr class='sheet-dark-cells'>
@@ -173,7 +173,6 @@
                                         </tr>
                                     </table>
                                 </div>
-                                <!-- <div class='sheet-clear'></div>  -->
                                 <div class='sheet-box-3 sheet-clear'>
                                     <table class='sheet-tab-radiation'>
                                         <tr><th>RADIATION</th></tr>
@@ -264,26 +263,33 @@
                                     </table>
                                     <table class='sheet-tab-weapons'>
                                         <tr>
-                                            <th style='width: 23%;'>WEAPONS</th>
-                                            <th style='width: 8%;'>BONUS</th>
-                                            <th style='width: 8%;'>INIT</th>
-                                            <th style='width: 8%;'>DAMAGE</th>
-                                            <th style='width: 8%;'>CRIT</th>
-                                            <th style='width: 10%;'>RANGE</th>
-                                            <th style='width: 23%;'>COMMENTS</th>
+                                            <th style='width: 24%;'>WEAPONS</th>
+                                            <th style='width: 7%;'>BONUS</th>
+                                            <th style='width: 7%;'>INIT</th>
+                                            <th style='width: 7%;'>DAMAGE</th>
+                                            <th style='width: 7%;'>CRIT</th>
+                                            <th style='width: 12%;'>RANGE</th>
+                                            <th style='width: 24%;'>COMMENTS</th>
                                             <th style='width: 12%;'>RELOADS</th>
                                         </tr>
                                     </table>
                                     <fieldset class='repeating_weapons'>
                                         <table>
                                             <tr>
-                                                <td style='width: 23%;'><input type='text' name='attr_weapon-name'></td>
-                                                <td style='width: 8%;'><input type='number' name='attr_weapon-bonus'></td>
-                                                <td style='width: 8%;'><input type='number' name='attr_weapon-init'></td>
-                                                <td style='width: 8%;'><input type='number' name='attr_weapon-damage'></td>
-                                                <td style='width: 8%;'><input type='number' name='attr_weapon-crit'></td>
-                                                <td style='width: 10%;'><input type='text' name='attr_weapon-range'></td>
-                                                <td style='width: 23%;'><input type='text' name='attr_weapon-comment'></td>
+                                                <td style='width: 24%;'><input type='text' name='attr_weapon-name'></td>
+                                                <td style='width: 7%;'><input type='number' name='attr_weapon-bonus'></td>
+                                                <td style='width: 7%;'><input type='number' name='attr_weapon-init'></td>
+                                                <td style='width: 7%;'><input type='number' name='attr_weapon-damage'></td>
+                                                <td style='width: 7%;'><input type='number' name='attr_weapon-crit'></td>
+                                                <td style='width: 12%;'>
+                                                    <select name='attr_weapon-range'>
+                                                        <option>Close</option>
+                                                        <option>Short</option>
+                                                        <option>Long</option>
+                                                        <option>Extreme</option>
+                                                    </select>
+                                                </td>
+                                                <td style='width: 24%;'><input type='text' name='attr_weapon-comment'></td>
                                                 <td style='width: 12%;'>
                                                     <div>
                                                         <input type='checkbox' name='attr_weapon-reload-1' value='1'>
