@@ -1,14 +1,7 @@
-body {
-  color: black;
-}
+body {color: black;}
 
-div.sheet-container {
-  background-color: white;
-  width: 814px; 
-  display: inline-block;
-  padding: 20px 6px 20px 20px;
-  /*font-family: Helvetica;*/
-  /*font-weight: bold;*/
+.sheet-container, .sheet-container * {
+  box-sizing: border-box;
 }
 
 .sheet-title {
@@ -18,226 +11,276 @@ div.sheet-container {
   padding-bottom: 24px;
 }
 
-/* Grid System */
-.sheet-new-block {
-  clear: both;
-}
-
-div.sheet-col-4 {
-  width: 33.33%;
-  float: left;
-}
-
-div.sheet-col-8 {
-  width: 66.66%;
-  float: left;
-}
-
-div.sheet-col-6 {
-  width: 50%;
-  float: left;
-}
-
-/* Box containers for sheet sections*/
-.sheet-box {
-  font-family: Helvetica;
-  font-weight: bold;
-  background-color: #e3deda;
-  /*margin: 10px 5px 10px 5px;*/
-  /*height: 40px;*/
-  border-top: 2px;
-  border-bottom: 1px;
-  border-right: 2px;
-  border-left: 2px;
-  border-style: solid;
-  border-color: #62584d;
-  margin-right: 14px;
-  margin-bottom: 14px;
-}
-
-/* Input type styling */
-
-input[type=number] {
-  background-color: #e3deda;
-  border-color: #62584d;  
-  height: 24px !important;
-  margin-bottom: 0px;
-}
-
-input[type=text] {
-  /*float: right;*/
-  background-color: #f2f1ef;
-  margin-bottom: 0px;
-  /*width: 40%;*/
-  height: 22px;
-}
-
-/*input[type=checkbox] {
-  margin: 0px;
-  zoom: 1.5;
-}*/
-
-input.sheet-value-single {
-  width: 36px !important;
-  float: right;
-}
-
-td .sheet-value-single {
-  background-color: #f2f1ef;
-  border-color: rgb(204,204,204);
-}
-
-/* Inner sheet box table formatting */
-
-table {
-  width: 100%;
-}
-
-tr td:first-child {
-  border-left: none;
-}
-
-td {
-  border-left: 1px solid #62584d;
-  padding: 3px;
-}
-
-/* Sheet element styling */
-
 img.sheet-logo {
   display: block;
   margin: auto;
   padding-bottom: 22px;
 }
 
-.sheet-col-header {
-  background-color: black;
-  padding: 8px 6px 8px 6px;
-  color: white;
-  font-size: 14px;
+div[class^="sheet-box-"] {
+  /*border: 1px solid maroon;*/
+  /*float: left;*/
 }
 
-.sheet-row {
-  border-bottom: 1px solid #62584d;
-  padding: 3px;
-  /*height: 24px;*/
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.sheet-crit-injuries {
-  border-bottom: none;
-  text-align: left !important;
-  height: auto !important;
-}
-
-.sheet-nopad, .sheet-nopad td {
-  padding: 1px !important;
-  height: 28px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.sheet-nopad input[type=text] {
+input[type='text'] {
   width: 100%;
+  height: 28px !important;
+  background-color: #e3deda;
+  border-color: silver;
 }
 
-.sheet-dark-row {
-  background-color: #a29a94;
+input[type='number'] {
+  background-color: #e3deda;
+  border-color: #62584d;  
+  height: 28px !important;
+  width: 40px !important;
+  float: right;
+  text-align: right;
+}
+
+/* General Table formatting */
+
+table {
+  border: 2px solid #62584d;
+  width: 100%;
+  margin-bottom: 14px;
+  background-color: #d4ccc6;
+  font-size: 12px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+tr {
   border-bottom: 1px solid #62584d;
-  padding: 3px;
-  height: 24px;
-  font-size: 13px;
 }
 
-.sheet-dark-cell {
-  background-color: #a29a94;
+tr:last-of-type {
+  border-bottom: 0px;
 }
 
-.sheet-dark-row span, .sheet-dark-cell span {
-  position: relative;
-  top: 4px;
+th {
+  background-color: black;
+  color: white;
   font-weight: bold;
+  font-size: 14px;
+  font-family: Helvetica;
+  padding: 6px;
+  text-align: left;
+  border-left: 1px solid #62584d;
 }
 
-input.sheet-checkrow-small {
-  display: inline-block;
-  zoom: 1.3;
-  /*width: 10%;  */
-}
+th:first-of-type {border-left: none;}
 
-.sheet-check-large input[type=checkbox] {
-  zoom: 1.6 !important;
-}
-
-.sheet-checkrow-reload input {
-  zoom: 1.0 !important;
-}
-
-tr.sheet-col-header td {
-  padding: 8px 6px 8px 6px;
-}
-
-tr.sheet-col-header td:first-child {
-  font-weight: bold;
-}
-
-.sheet-smalltext {
-  font-size: 9px;
+th:nth-of-type(n+2) {
+  font-size: 10px;
   font-weight: normal;
-  vertical-align: middle;
+  text-align: center;
+}
+
+td:first-of-type {border-left: none;}
+
+td {
+  border-left: 1px solid #62584d;
+}
+
+/* Sheet layout format */
+
+.sheet-container {
+  width: 800px;
+}
+
+.sheet-box-1 {
+  width: 33%;
+  float: left;
+  padding-right: 0.8%;
+}
+
+.sheet-box-2 {
+  width: 67%;
+  float: left;
+  padding-left: 0.8%;
+}
+
+.sheet-box-3 {
+  width: 67%;
+  float: left;
+  padding-right: 0.8%;
+}
+
+.sheet-box-4 {
+  width: 33%;
+  float: left;
+  padding-left: 0.8%;
+}
+
+.sheet-clear {
+  clear: both;
 }
 
 .sheet-center {
   text-align: center;
-  height: auto;
 }
 
-.sheet-justify {
-  /*display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -ms-flexbox;
-  justify-content: space-between;*/
-  /*text-align: justify;*/
-  height: auto;
+.sheet-tab-radiation {
+  width: 48.5%;
+  float: left;
 }
 
-table.sheet-relationship tbody > tr td input[type=checkbox] {
-  zoom: 1.6;
-  display: block;
-  margin: auto;
+.sheet-tab-experience {
+  width: 49%;
+  float: right;
 }
 
-.sheet-justify input[type=checkbox] {
-  zoom: 1.3;
-  margin: auto !important;
+.sheet-box-1 table:not(:last-of-type) {margin-bottom: 10px;}
+.sheet-box-2 table:not(:last-of-type) {margin-bottom: 18px;}
+
+/* Padding */
+.sheet-tab-attributes tr td,
+.sheet-tab-trauma tr:nth-of-type(2) td,
+.sheet-tab-trauma tr:nth-of-type(4) td,
+.sheet-tab-trauma tr:nth-of-type(8) td,
+.sheet-tab-personal tr:nth-of-type(3) td:last-of-type,
+.sheet-tab-skills td {
+  padding: 1px 6px;
 }
 
-.sheet-headertext-general {
-  position: relative;
-  left: 160px;
+.sheet-tab-personal td,
+.sheet-tab-appearance td,
+.sheet-tab-relationships td:first-of-type {
+  padding-left: 6px;
 }
 
-/* Vertical margin adjustments */
-.sheet-adjust-v1 {
-  margin-top: 21px;
+/* Individual table formats */
+
+.sheet-tab-attributes, 
+.sheet-tab-skills, 
+.sheet-tab-radiation,
+.sheet-tab-experience,
+.sheet-dark-cells, 
+.sheet-tab-weapons td:last-of-type,
+.sheet-tab-relationships td:last-of-type {
+  background-color: #a29a94;
 }
 
-.sheet-adjust-v2 {
-  position: relative;
-  top: 6px;
+.sheet-tab-trauma tr:nth-of-type(2),
+.sheet-tab-trauma tr:nth-of-type(4),
+.sheet-tab-trauma tr:nth-of-type(8) {
+  border-bottom: none;
+  padding: 1px 6px;
 }
 
-/* Horizontal text input adjustments */
-.sheet-h-h1 {width: 270px;}
-.sheet-h-h2 {width: 142px;}
-.sheet-h-h3 {width: 257px;}
-.sheet-h-h4 {width: 180px;}
-.sheet-h-h5 {width: 225px;}
-.sheet-h-h6 {width: 427px;}
-.sheet-h-h7 {width: 489px;}
-.sheet-h-h8 {width: 471px;}
-.sheet-h-h9 {width: 140px;}
-.sheet-h-h10 {width: 305px;}
+.sheet-tab-trauma span {
+  font-size: 14px;
+  padding-top: 6px;
+  float: left;
+}
+
+.sheet-tab-trauma input[type='checkbox'] {
+  zoom: 1.35;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.sheet-tab-trauma tr:nth-of-type(n+5):nth-of-type(-n+7) td {
+  padding: 1px;
+}
+
+.sheet-tab-attributes td {
+  border-left: none;
+  font-size: 14px;
+}
+
+.sheet-tab-personal span,
+.sheet-tab-appearance span {
+  padding-top: 6px;
+  padding-right: 6px;
+  float: left;
+}
+
+.sheet-tab-relationships td:not(:last-of-type) {border-left: none;}
+.sheet-tab-relationships td:last-of-type {text-align: center;}
+.sheet-tab-relationships input[type='checkbox'] {zoom: 1.8;}
+
+.sheet-tab-radiation input,
+.sheet-tab-experience input {zoom: 1.65;}
+
+.sheet-tab-radiation td,
+.sheet-tab-experience td {text-align: center;}
+
+.sheet-tab-skills td,
+.sheet-tab-skills th {border-left: none;}
+
+[data-groupname=repeating_weapons] input[type='number'],
+[data-groupname=repeating_gear] input[type='number'],
+.sheet-tab-armor input[type='number'],
+.sheet-tab-gear input[type='number'] {
+  width: 100% !important;
+  border-color: silver;
+}
+
+[data-groupname=repeating_weapons] div table,
+[data-groupname=repeating_gear] div table {
+  border-top: 1px solid #62584d;
+  margin: 0px;
+}
+
+[data-groupname=repeating_weapons] div:not(:last-of-type) table,
+[data-groupname=repeating_gear] div:not(:last-of-type) table {
+  border-bottom: 0px;
+}
+
+[data-groupname=repeating_weapons] div:first-of-type table,
+[data-groupname=repeating_gear] div:first-of-type table {
+  border-top: 0px;
+}
+
+[data-groupname=repeating_weapons] td:last-of-type {text-align: center;}
+[data-groupname=repeating_weapons] input[type='checkbox'] {zoom: 1.1;}
+
+table.sheet-tab-weapons,
+table.sheet-tab-gear {margin-bottom: 0px;}
+
+.sheet-tab-weapons td:last-of-type {text-align: center;}
+.sheet-tab-weapons input[type='checkbox'] {zoom: 1.1;}
+.sheet-tab-weapons th:not(:first-of-type) {
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 8px;
+  vertical-align: bottom;
+}
+
+/* Adjust text input widths for tables */
+
+input[name='attr_character_name'] {
+  width: calc(100% - 43px);
+}
+
+input[name$='background'] {
+  width: calc(100% - 81px);
+}
+
+input[name='attr_concept'] {
+  width: calc(100% - 58px);
+}
+
+input[name$='icon'] {
+  width: calc(100% - 35px);
+}
+
+input[name$='group-concept'] {
+  width: calc(100% - 98px);
+}
+
+input[name='attr_personal-problem'] {
+  width: calc(100% - 113px);
+}
+
+input[name='attr_face'] {
+  width: calc(100% - 38px);
+}
+
+input[name='attr_clothing'] {
+  width: calc(100% - 59px);
+}
+
+/**********************************/
